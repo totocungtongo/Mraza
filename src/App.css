@@ -1,3 +1,12 @@
+
+li{
+  text-align: start;
+  list-style-type: none;
+  margin-top: 5px;
+}
+.mr-3{
+  margin-right: 8px;
+}
 /* section 1 */
 .section1 {
   position: relative;
@@ -32,7 +41,7 @@
   position: relative;
   text-align: center;
   color: white;
-  background: linear-gradient(to right, #fff 50%, #2a5b82 50%);
+  background: linear-gradient(to right, #61c4b0 50%, #2a5b82 50%);
 }
 .postcard {
   position: absolute;
@@ -42,12 +51,24 @@
   background-color: #2a5b82;
   background-image: url(https://i.postimg.cc/mDWSdkPX/totocungtongo-a-student-learning-in-the-middle-of-aesthetic-sno-936a6ac6-3c9b-4fad-a120-34fb87c2f45e.png);
   background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top right;
   border-radius: 40px;
 }
 .postcard-text {
   position: absolute;
-  width: 400px;
+  /* background-color: rgba(42, 241, 122, 0.3); */
+  width: 500px;
   height: 320px;
-  top: 10%;
-  left: 5%;
+  top: 15%;
+  left: 3%;
+  font-family: "Poppins", sans-serif;
+}
+.postcard-text-p {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: start;
 }

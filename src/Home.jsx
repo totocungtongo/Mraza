@@ -55,7 +55,32 @@ function Home() {
       </div>
       {/* section 2 */}
       <div className="section2" id="middle" style={{ height: "600px" }}>
-        <div className="postcard" style={{width: "1050px",height:"400px"}}><div className="postcard-text" style={{color:"white"}}><h1>What is lorep ipsum</h1></div></div>
+        <div className="postcard" style={{ width: "1050px", height: "400px" }}>
+          <div className="postcard-text" style={{ color: "white" }}>
+            <h1 style={{ textAlign: "start" }}>What is lorep ipsum</h1>
+            <p className="postcard-text-p">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries
+            </p>
+            <li>
+              <i
+                class="bi bi-check-circle-fill mr-3"
+              ></i>
+              Lorem Ipsum is simply dummy text of the printing
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill mr-3"></i>Lorem Ipsum is simply
+              dummy text of the printing
+            </li>
+            <li>
+              <i class="bi bi-check-circle-fill mr-3" ></i>Lorem Ipsum is simply dummy
+              text of the printing
+            </li>
+          </div>
+        </div>
       </div>
       <div className="section4" id="bottom" style={{ height: "500px" }}></div>
     </>
