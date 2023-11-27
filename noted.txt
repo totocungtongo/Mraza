@@ -3,4 +3,10 @@ IMAGES --> 1. https://i.postimg.cc/ZK3CYLFL/desk-workspace-with-various-elements
            3. https://i.postimg.cc/mDWSdkPX/totocungtongo-a-student-learning-in-the-middle-of-aesthetic-sno-936a6ac6-3c9b-4fad-a120-34fb87c2f45e.png = snow study
            4. https://i.postimg.cc/YqFP53pn/karikatur.png = karikatur pelajar
 
-COLORS --> 1.
+COLORS --> 1.cceadd super light green
+           2.cfc9c9 grey
+           3.2a5b82 dark blue
+           4.61c4b0 light green
+           5.eb1d23 red
+           6.ff9090 light pink
+           7.bb5fcb purple
