@@ -5,6 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -12,13 +13,32 @@ code {
     monospace;
 }
 .fredokaB{
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 600;
+  font-family: 'Fredoka', sans-serif !important;
+  font-weight: 600 !important;
 }
 .fredokaL{
-  font-family: 'Fredoka', sans-serif;
-  font-weight: 400;
+  font-family: 'Fredoka', sans-serif !important;
+  font-weight: 400 !important;
 }
 .bimbel-blue{
   color: #2a5b82 !important;
+}
+
+.back-darkblue{
+  background-color: #2a5b82 !important;
+}
+.back-lightblue{
+  background-color: #61c4b0 !important;
+}
+
+@keyframes text-animation {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
 }

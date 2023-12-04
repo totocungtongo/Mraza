@@ -1,0 +1,23 @@
+.navbar-modal{
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+.button-cost{
+    border: none !important;
+    outline: none !important;
+    transition: none !important;
+}   
+.carousel-Rev{
+    opacity: 0;
+}
+.before-animation{
+    opacity: 0 !important;
+}
+.animation-fade-left{
+    animation: text-animation 3s ease 0s 1 normal forwards;
+    opacity: 1;
+}
+.card-style{
+  background-color: #cfc9c9;
+}

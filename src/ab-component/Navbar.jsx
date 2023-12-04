@@ -11,7 +11,7 @@ function Navs() {
   useEffect(() => {
     const handleResize = () => {
       const viewport = window.innerWidth;
-      if (viewport > 770) {
+      if (viewport > 990) {
         setIsBelow730(false);
       } else {
         setIsBelow730(true);
@@ -37,11 +37,20 @@ function Navs() {
       >
         <Container className="justify-content-center">
           <Navbar.Brand href="#home" className="fredokaB">
-            <img src="https://i.ibb.co/rw8cxgf/Logo-bimble.webp" alt="logo bimbel" style={{width:"80px"}} />
+            <img
+              src="https://i.ibb.co/rw8cxgf/Logo-bimble.webp"
+              alt="logo bimbel"
+              style={{ width: "60px" }}
+            />
           </Navbar.Brand>
           {isBelow730 ? (
-            <Button variant="primary" onClick={handleShow}>
-              Launch demo modal
+            <Button
+              variant="none"
+              className="button-cost fredokaB"
+              style={{ fontSize: "20px" }}
+              onClick={handleShow}
+            >
+              Menu
             </Button>
           ) : (
             <Nav
@@ -49,7 +58,7 @@ function Navs() {
               style={{
                 justifyContent: "center",
                 alignItems: "center",
-                fontSize:"20px"
+                fontSize: "20px",
               }}
             >
               <Nav.Link href="#home">Home</Nav.Link>
@@ -61,19 +70,43 @@ function Navs() {
           )}
         </Container>
       </Navbar>
-      <Modal show={show} onHide={handleClose}>
-        <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+      <Modal show={show} onHide={handleClose} className="navbar-modal">
+        <Modal.Header
+          style={{
+            backgroundColor: "#cceadd",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            paddingBottom:"0px"
+          }}
+        >
+          <Modal.Title className="fredokaB">Menu</Modal.Title>
         </Modal.Header>
-        <Modal.Body>Woohoo, you are reading this text in a modal!</Modal.Body>
-        <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
-            Close
-          </Button>
-          <Button variant="primary" onClick={handleClose}>
-            Save Changes
-          </Button>
-        </Modal.Footer>
+        <Modal.Body
+          style={{
+            backgroundColor: "#cceadd",
+            borderBottomLeftRadius: "10px",
+            borderBottomRightRadius: "10px",
+          }}
+        >
+          <Nav
+            className="fredokaB"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+              alignItems: "center",
+              fontSize: "20px",
+              color: "black !important",
+            }}
+          >
+            <Nav.Link href="#home">Home</Nav.Link>
+            <Nav.Link href="#features">Kumpulan soal</Nav.Link>
+            <Nav.Link href="#pricing">Daftar sekarang!</Nav.Link>
+            <Nav.Link href="#pricing">Parenting konsul</Nav.Link>
+            <Nav.Link href="#pricing">Blog</Nav.Link>
+          </Nav>
+        </Modal.Body>
       </Modal>
     </>
   );
