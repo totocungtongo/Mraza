@@ -18,6 +18,10 @@
 .card-style{
   background-color: #fff;
 }
+.animation-bounce-down{
+    animation: bounce-animation 2s ease 0s 1 normal forwards;
+    opacity: 1;
+}
 
 @media (max-width: 576px) {
       .reviewsec-wrapper{

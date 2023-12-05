@@ -26,7 +26,6 @@
   flex-direction: row;
   gap: 50px;
   padding: 60px;
-  border-bottom: 1px #2a5d82;
 }
 .sambutan-col-1 {
   animation: text-animation 3s ease 0s 1 normal forwards;
@@ -48,7 +47,7 @@
   max-height: 400px !important;
   padding: 0px 0px !important;
 }
-.Review {
+.Teacher {
   background-color: #2a5d82;
   position: relative;
   height: 600px;
@@ -60,7 +59,7 @@
   padding: 60px;
   border-width: 0px !important;
 }
-.Review-col-1 {
+.Teacher-col-1 {
   max-width: 900px !important;
   max-height: 100%;
   padding: 0px 0px !important;
@@ -98,7 +97,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 120px;
+  height: 65px;
 }
 
 .wave1 .shape-fill {
@@ -161,10 +160,10 @@
     font-size: 44px !important;
     text-align: center;
   }
-  .Review {
+  .Teacher {
     height: auto !important;
   }
-  .Review-col-1 {
+  .Teacher-col-1 {
     height: auto !important;
   }
   .card-style {
@@ -173,7 +172,7 @@
   .card-style {
     flex-direction: column !important;
   }
-   .wave2 svg{
+  .wave2 svg {
     height: 120px;
   }
   .h2-bimbel {
@@ -200,13 +199,13 @@
   .whois {
     height: auto !important;
   }
-  .Review {
+  .Teacher {
     height: 700px !important;
   }
   .wave2 svg {
     height: 120px;
   }
-  .Review-col-1 {
+  .Teacher-col-1 {
     height: auto !important;
     max-width: 250px !important;
   }
@@ -216,13 +215,13 @@
   .card-style {
     flex-direction: column !important;
   }
-  .card-title{
+  .card-title {
     font-size: medium !important;
   }
-  .card-text{
+  .card-text {
     font-size: small !important;
   }
-  .card li{
-    font-size: 12px !important
+  .card li {
+    font-size: 12px !important;
   }
 }

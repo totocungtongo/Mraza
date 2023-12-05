@@ -3,13 +3,13 @@ import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useState, useRef } from "react";
-import useIntersectionObserver from "../ab-component/AnimationTrigger";
+import AnimationMasuk from "../ab-component/AnimationTrigger";
 
-const ReviewSec = () => {
+const TeacherSec = () => {
   const componentRef = useRef(null);
-  const isVisible = useIntersectionObserver(componentRef);
+  const isVisible = AnimationMasuk(componentRef);
   const [isBelow730, setIsBelow730] = useState(false);
-  const [teacher, setTeacher] = useState();
+  const [teacher, setTeacher] = useState([]);
   useEffect(() => {
     const handleResize = () => {
       const viewport = window.innerWidth;
@@ -73,7 +73,7 @@ const ReviewSec = () => {
         >
           {teacher.map((item, index) =>{
            return (
-             <Carousel.Item interval={35000} key={index}>
+             <Carousel.Item interval={3000} key={index}>
                <Card
                  style={{ width: "100%", height: "300px" }}
                  className="card-style"
@@ -121,4 +121,4 @@ const ReviewSec = () => {
   );
 };
 
-export default ReviewSec;
+export default TeacherSec;

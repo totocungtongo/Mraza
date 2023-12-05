@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const useIntersectionObserver = (ref, options = {}) => {
+const AnimationMasuk = (ref, options = {}) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -28,4 +28,4 @@ const useIntersectionObserver = (ref, options = {}) => {
   return isVisible;
 };
 
-export default useIntersectionObserver;
+export default AnimationMasuk;
