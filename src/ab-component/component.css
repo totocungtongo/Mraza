@@ -8,9 +8,6 @@
     outline: none !important;
     transition: none !important;
 }   
-.carousel-Rev{
-    opacity: 0;
-}
 .before-animation{
     opacity: 0 !important;
 }
@@ -19,5 +16,11 @@
     opacity: 1;
 }
 .card-style{
-  background-color: #cfc9c9;
+  background-color: #fff;
+}
+
+@media (max-width: 576px) {
+      .reviewsec-wrapper{
+  max-width: 250px !important;  
+}
 }

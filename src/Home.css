@@ -208,6 +208,7 @@
   }
   .Review-col-1 {
     height: auto !important;
+    max-width: 250px !important;
   }
   .card-style {
     height: auto !important;
@@ -220,5 +221,8 @@
   }
   .card-text{
     font-size: small !important;
+  }
+  .card li{
+    font-size: 12px !important
   }
 }

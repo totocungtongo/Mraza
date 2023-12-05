@@ -3,7 +3,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navs from "./ab-component/Navbar";
 import { Container, Row, Col, Button } from "react-bootstrap";
-import ReviewSec from "./ab-component/Reviewsec";
+import ReviewSec from "./Home/Reviewsec";
 
 function Home() {
   return (
@@ -76,7 +76,7 @@ function Home() {
           </div>
         </Row>
         <Row className="whois">
-          <Col className="whois-col-1">heii</Col>
+          <Col className="whois-col-1">Berbeda dari yang lain</Col>
         </Row>
       </Container>
     </div>
@@ -86,7 +86,7 @@ function Home() {
 export default Home;
 
 // Apa yang home butuhkan
-// 1. Welcome section.
-// 2. Who is Bimbel mraza section.
-// 3. Review section.
-// 4. interested? section.
+// 1. Welcome section. Check
+// 2. Teacher section.
+// 3. Materi yang di pelajari.
+// 4. why us section.
