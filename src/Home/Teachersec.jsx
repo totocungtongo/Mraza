@@ -99,7 +99,7 @@ const TeacherSec = () => {
                      style={{ width: "30px", height: "30px", padding: "0px" }}
                    >
                      <i
-                       class="bi bi-instagram"
+                       className="bi bi-instagram"
                        style={{
                          display: "flex",
                          width: "30px",

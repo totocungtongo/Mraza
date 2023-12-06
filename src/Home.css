@@ -34,6 +34,12 @@
   padding: 0px 0px !important;
   gap: 20px;
 }
+.h1-bimbel {
+  font-size: 66px !important;
+}
+.h2-bimbel {
+  font-size: 23px;
+}
 .button-sam {
   color: white !important;
   background-color: #bb5fcb !important;
@@ -67,11 +73,11 @@
 .whois {
   background-color: #ff9090;
   position: relative;
-  height: 600px;
+  height: 800px;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   gap: 20px;
   padding: 60px;
   border-width: 0px !important;
@@ -124,12 +130,27 @@
 .wave2 .shape-fill {
   fill: #ff9090;
 }
-@media (min-width: 1024px) {
-  .h1-bimbel {
-    font-size: 66px !important;
+.judul-whois {
+  text-align: center;
+  font-size: 40px;
+}
+.whois-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+@media (max-width: 1204px) {
+  .whois {
+    height: auto;
   }
-  .h2-bimbel {
-    font-size: 23px;
+  .judul-whois {
+    text-align: center;
+    font-size: 30px;
+  }
+  .whois-wraper {
+    gap: 0px !important;
   }
 }
 @media (max-width: 1024px) {
@@ -150,6 +171,10 @@
     display: block;
     width: calc(100% + 1.3px);
     height: 100px;
+  }
+  .judul-whois {
+    text-align: center;
+    font-size: 30px;
   }
 }
 @media (max-width: 768px) {
@@ -188,6 +213,10 @@
   .image-sam {
     width: 300px !important;
   }
+  .judul-whois {
+    text-align: center;
+    font-size: 30px;
+  }
 }
 @media (max-width: 576px) {
   .h1-bimbel {
@@ -223,5 +252,18 @@
   }
   .card li {
     font-size: 12px !important;
+  }
+  .whois {
+    padding: 20px;
+  }
+  .whois-wraper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .judul-whois {
+    text-align: center;
+    font-size: 30px;
   }
 }

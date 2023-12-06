@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const AnimationMasuk = (ref, options = {}) => {
+const AnimationMasuk = (ref, offset = 30) => {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -8,6 +8,12 @@ const AnimationMasuk = (ref, options = {}) => {
     const currentRef = ref.current;
 
     if (currentRef) {
+      const options = {
+        root: null,
+        rootMargin: `-${offset}px 0px 0px 0px`,
+        threshold: 0,
+      };
+
       observer = new IntersectionObserver(([entry]) => {
         if (entry.isIntersecting) {
           setIsVisible(true);
@@ -23,9 +29,11 @@ const AnimationMasuk = (ref, options = {}) => {
         observer.disconnect();
       }
     };
-  }, [ref, options]);
+  }, [ref, offset]);
 
   return isVisible;
 };
 
 export default AnimationMasuk;
+
+// AnimationMasuk

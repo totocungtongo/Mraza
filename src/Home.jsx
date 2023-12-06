@@ -13,9 +13,8 @@ function Home() {
       <Container className="welcome-section">
         <Row className="sambutan-wraper">
           <Col className="sambutan-col-1 back-lightblue">
-            <h1 className="fredokaB h1-bimbel">
-              Menggapai cita-cita tanpa beban{" "}
-            </h1>
+            <h1 className="fredokaB h1-bimbel">Bimbel Mraza</h1>
+            <h2 className="fredokaB h1-bimbel">TK-SD-SMP-SMA</h2>
             <h2 className="fredokaL h2-bimbel">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
               libero unde hic quos, vitae adipisci cumque ducimus odio alias,
@@ -59,7 +58,20 @@ function Home() {
           </div>
         </Row>
         <Row className="whois">
-          <Materi/>
+          <h3 className="fredokaB judul-whois">Materi-Materi Bimbel Mraza</h3>
+          <div className="whois-wraper">
+            <Materi />
+            <img
+              src="https://img.freepik.com/free-photo/little-bookworm-wrapped-up-reading_1098-17283.jpg?w=360&t=st=1701845838~exp=1701846438~hmac=993f490a98b1ac10230ae34aa3b1a24a5d3ff1af2b35f31cc71bc525329c3234"
+              alt="kidsplaying"
+              className="whois-img"
+              style={{
+                maxWidth: "100%",
+                height: "auto",
+                borderRadius: "200px",
+              }}
+            />
+          </div>
           <div className="wave1">
             <svg
               data-name="Layer 1"
