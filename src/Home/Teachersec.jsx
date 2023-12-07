@@ -60,7 +60,7 @@ const TeacherSec = () => {
   }, []);
 
   return (
-    <div ref={componentRef} className="reviewsec-wrapper">
+    <div ref={componentRef} className="reviewsec-wrapper mt-3">
       {isVisible ? (
         <Carousel
           controls={false}
