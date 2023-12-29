@@ -52,15 +52,34 @@ const Materi = () => {
         return (
           <Card style={{ width: "18rem" }} key={index} className="matpel-card">
             <Card.Body>
-              <Card.Title className="fredokaB matpel-card-t" style={{}}>
-                <i className={item.icon + " icon-style"} style={{padding:"0",fontSize:"40px",marginRight:"10px",color:"#2a5d82"}}></i>
+              <Card.Title className="fredokaB matpel-card-t">
+                <i
+                  className={item.icon + " icon-style"}
+                  style={{
+                    padding: "0",
+                    fontSize: "40px",
+                    marginRight: "10px",
+                    color: "#2a5d82",
+                  }}
+                ></i>
                 {item.matname}
               </Card.Title>
-              <Card.Text className="fredokaL matpel-card-p">{item.desk}</Card.Text>
+              <Card.Text className="fredokaL matpel-card-p">
+                {item.desk}
+              </Card.Text>
             </Card.Body>
           </Card>
         );
       })}
+      <p
+        style={{
+          color: "#ff9090",
+          webkitUserSelect: "none",
+          userSelect: "none",
+        }}
+      >
+        im hidden
+      </p>
     </Row>
   );
 };

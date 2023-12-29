@@ -1,0 +1,12 @@
+.animation-fade-left {
+  animation: text-animation 3s ease 0s 1 normal forwards;
+  opacity: 1;
+}
+.animation-bounce-down {
+  animation: bounce-animation 3s ease 0s 1 normal forwards;
+  opacity: 1;
+}
+.animation-fade-right {
+  animation: text-animation-2 3s ease 0s 1 normal forwards;
+  opacity: 1;
+}

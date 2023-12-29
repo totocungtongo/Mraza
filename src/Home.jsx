@@ -1,25 +1,30 @@
 import "./Home.css";
-import React from "react";
+import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navs from "./ab-component/Navbar";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import TeacherSec from "./Home/Teachersec";
 import Materi from "./Home/Matpel";
+import AnimationMasuk from "./ab-component/AnimationTrigger";
 
 function Home() {
+  const whyusRef = useRef(null);
+  const isVisible = AnimationMasuk(whyusRef);
   return (
     <div className="home-wrapper">
       <Navs />
       <Container className="welcome-section">
         <Row className="sambutan-wraper">
           <Col className="sambutan-col-1 back-lightblue">
-            <h1 className="fredokaB h1-bimbel">Bimbel Mraza</h1>
+            <h1 className="fredokaB h1-bimbel">
+              Bimbel <span style={{ color: "#eb1d23" }}>M</span>raza
+            </h1>
             <h2 className="fredokaB h2-bimbel">TK-SD-SMP-SMA</h2>
             <h2 className="fredokaL h3-bimbel">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos
               libero unde hic quos, vitae adipisci cumque ducimus odio alias,
               possimus explicabo perspiciatis? Excepturi rem tenetur cupiditate
-              deserunt adipisci, eius explicabo.
+              deserunt adipisci, eius explicabo.-Ms mina
             </h2>
             <Button variant="none" className="button-sam">
               Ketahui lebih lanjut!
@@ -58,7 +63,9 @@ function Home() {
           </div>
         </Row>
         <Row className="whois">
-          <h3 className="fredokaB judul-whois">Materi-Materi Bimbel Mraza</h3>
+          <h3 className="fredokaB judul-whois">
+            Materi-Materi Bimbel <span style={{ color: "#eb1d23" }}>M</span>raza
+          </h3>
           <div className="whois-wraper">
             <Materi />
             <img
@@ -74,7 +81,7 @@ function Home() {
           </div>
         </Row>
         <Row className="Teacher">
-          <div class="wave3">
+          <div className="wave3">
             <svg
               data-name="Layer 1"
               xmlns="http://www.w3.org/2000/svg"
@@ -83,12 +90,61 @@ function Home() {
             >
               <path
                 d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
-                class="shape-fill"
+                className="shape-fill"
               ></path>
             </svg>
           </div>
           <Col className="Teacher-col-1  back-darkblue ">
             <TeacherSec />
+          </Col>
+        </Row>
+        <Row className="whyus">
+          <div className="wave4">
+            <svg
+              data-name="Layer 1"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 1200 120"
+              preserveAspectRatio="none"
+            >
+              <path
+                d="M600,112.77C268.63,112.77,0,65.52,0,7.23V120H1200V7.23C1200,65.52,931.37,112.77,600,112.77Z"
+                className="shape-fill"
+              ></path>
+            </svg>
+          </div>
+          <Col
+            className={
+              isVisible
+                ? "whyus-col-1  animation-fade-right"
+                : "before-animation"
+            }
+          >
+            <h3
+              className="fredokaB h3-whyus"
+              style={{ fontSize: "50px" }}
+              ref={whyusRef}
+            >
+              Kenapa Kami?
+            </h3>
+            <p
+              className="fredokaL p-whyus"
+              style={{
+                textAlign: "center",
+                marginTop: "20px",
+                fontSize: "20px",
+              }}
+            >
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni
+              dolor velit magnam maxime aliquid? Itaque esse aliquam eius quasi
+              consequatur dolorem error architecto accusamus, ipsum expedita
+              vitae ipsa quidem non? Lorem ipsum dolor sit amet consectetur
+              adipisicing elit. Excepturi, quasi repellendus dolore officiis
+              corporis iusto, magnam saepe ab quaerat dolor provident odio quod
+              quo quas est laborum adipisci consequuntur. Quas.
+            </p>
+            <Button variant="none" className="button-sam">
+              Program Pembelajaran
+            </Button>
           </Col>
         </Row>
       </Container>
@@ -99,7 +155,8 @@ function Home() {
 export default Home;
 
 // Apa yang home butuhkan
-// 1. Welcome section. Check
-// 2. Teacher section.
-// 3. Materi yang di pelajari.
-// 4. why us section.
+// 1. Welcome section. ✅
+// 2. Teacher section.✅
+// 3. Materi yang di pelajari.✅
+// 4. why us section. ✅
+// 4. Footer.

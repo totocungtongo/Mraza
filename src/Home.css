@@ -46,10 +46,19 @@
 .button-sam {
   color: white !important;
   background-color: #bb5fcb !important;
+  box-shadow:  5px 6px rgba(0, 0, 0, 0.3);
+  transition: ease 1s;
 }
 .button-sam:hover {
   color: white !important;
+  background-color: #850e9a !important;
+  transition: ease 1s;
+}
+.button-sam:focus{
+  color: white !important;
   background-color: #6f0b81 !important;
+  box-shadow:  5px 4px rgba(0, 0, 0, 0.2);
+  transition: ease 0.5s;
 }
 .sambutan-col-2 {
   max-width: 400px !important;
@@ -91,6 +100,27 @@
 .card-style {
   flex-direction: row !important;
 }
+.whyus {
+  background-color: #61c4b0;
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 60px;
+  border-width: 0px !important;
+}
+.whyus-col-1 {
+  max-width: 900px !important;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 0px !important;
+}
 .wave1 {
   position: absolute;
   bottom: 0;
@@ -112,7 +142,7 @@
 
 .wave1 .shape-fill {
   fill: #2a5d82;
-   top: -10px;
+  top: -10px;
 }
 .wave2 {
   position: absolute;
@@ -138,26 +168,47 @@
   fill: #ff9090;
 }
 .wave3 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-    padding: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding: 0 !important;
 }
 
 .wave3 svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 72px;
-    margin-bottom: -1px;
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 72px;
+  margin-bottom: -1px;
 }
 
 .wave3 .shape-fill {
-    fill: #ff9090;
+  fill: #ff9090;
+}
+.wave4 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding: 0 !important;
+}
+
+.wave4 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave4 .shape-fill {
+  fill: #2a5d82;
 }
 .judul-whois {
   text-align: center;
@@ -189,7 +240,7 @@
   .h2-bimbel {
     font-size: 30px;
   }
-  .h3-bimbel{
+  .h3-bimbel {
     font-size: 23px;
   }
   .image-sam {
@@ -217,7 +268,7 @@
     font-size: 44px !important;
     text-align: center;
   }
-    .h3-bimbel{
+  .h3-bimbel {
     font-size: 23px;
   }
   .Teacher {
@@ -240,13 +291,13 @@
     text-align: center;
   }
   .sambutan-wraper {
-  flex-direction: column;
-  gap: 20px;
-  height: auto;
-}
+    flex-direction: column;
+    gap: 20px;
+    height: auto;
+  }
   .sambutan-col-1 {
     display: flex;
-    flex-direction: column ;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -259,14 +310,23 @@
   }
 }
 @media (max-width: 576px) {
+  .caraousel-rev{
+    padding: 0px  0px !important;
+  }
   .h1-bimbel {
     font-size: 33px !important;
   }
   .h2-bimbel {
     font-size: 22px;
   }
-   .h3-bimbel {
+  .h3-bimbel {
     font-size: 13px;
+  }
+  .h3-whyus{
+    font-size: 35px !important;
+  }
+  .p-whyus{
+    font-size: 12px !important;
   }
   .whois {
     height: auto !important;

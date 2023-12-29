@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import Card from "react-bootstrap/Card";
 import { useState, useRef } from "react";
 import AnimationMasuk from "../ab-component/AnimationTrigger";
+import "../ab-component/animation.css";
 
 const TeacherSec = () => {
   const componentRef = useRef(null);
@@ -29,7 +30,7 @@ const TeacherSec = () => {
         name: "Mr.wong",
         background: "Bahasa inggris master",
         img: "",
-        ig: "ascasc",
+        ig: "https://www.instagram.com/fafadjufri/",
         desk: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Itaque officia recusandae sunt sapiente minus aliquam. A ipsam
                   placeat, nulla laboriosam sit repellendus ipsa natus fuga
@@ -39,7 +40,7 @@ const TeacherSec = () => {
         name: "Mr.dong",
         background: "Bahasa inggris master",
         img: "",
-        ig: "ascasc",
+        ig: "https://www.instagram.com/fafadjufri/",
         desk: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Itaque officia recusandae sunt sapiente minus aliquam. A ipsam
                   placeat, nulla laboriosam sit repellendus ipsa natus fuga
@@ -49,7 +50,7 @@ const TeacherSec = () => {
         name: "Mr.who",
         background: "Bahasa inggris master",
         img: "",
-        ig: "ascasc",
+        ig: "https://www.instagram.com/fafadjufri/",
         desk: `Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Itaque officia recusandae sunt sapiente minus aliquam. A ipsam
                   placeat, nulla laboriosam sit repellendus ipsa natus fuga
@@ -60,59 +61,68 @@ const TeacherSec = () => {
   }, []);
 
   return (
-    <div ref={componentRef} className="reviewsec-wrapper mt-3">
+    <div className="reviewsec-wrapper mt-1" ref={componentRef}>
       {isVisible ? (
         <Carousel
           controls={false}
           indicators={isBelow730 ? false : true}
           variant="dark"
-          style={{ minHeight: "350px", width: "100%", marginBottom: "20px" }}
+          style={{
+            display: "flex",
+            minHeight: "350px",
+            width: "100%",
+            marginBottom: "20px",
+            top: "40px",
+            padding: "40px 40px",
+          }}
           className={
             isVisible ? "caraousel-rev animation-fade-left" : "before-animation"
           }
         >
-          {teacher.map((item, index) =>{
-           return (
-             <Carousel.Item interval={3000} key={index}>
-               <Card
-                 style={{ width: "100%", height: "300px" }}
-                 className="card-style"
-               >
-                 <Card.Img
-                   variant="left"
-                   src="https://i.ibb.co/0Jv0WP5/ezgif-com-gif-maker.webp"
-                   style={{ maxWidth: "300px", maxHeight: "300px" }}
-                   className="card-imgs"
-                 />
-                 <Card.Body>
-                   <Card.ImgOverlay>
-                     <Card.Title className="fredokaB">{item.name}</Card.Title>
-                   </Card.ImgOverlay>
-                   <Card.Text className="fredokaB">
-                     {item.background}
-                   </Card.Text>
-                   <Card.Text className="fredokaB">
-                    {item.desk}
-                   </Card.Text>
-                   <Button
-                     variant="none"
-                     style={{ width: "30px", height: "30px", padding: "0px" }}
-                   >
-                     <i
-                       className="bi bi-instagram"
-                       style={{
-                         display: "flex",
-                         width: "30px",
-                         fontSize: "30px",
-                       }}
-                     ></i>
-                   </Button>
-                 </Card.Body>
-               </Card>
-             </Carousel.Item>
-           ); 
+          {teacher.map((item, index) => {
+            return (
+              <Carousel.Item interval={3000} key={index}>
+                <Card
+                  style={{ width: "100%", height: "300px" }}
+                  className="card-style"
+                >
+                  <Card.Img
+                    variant="left"
+                    src="https://i.ibb.co/0Jv0WP5/ezgif-com-gif-maker.webp"
+                    style={{ maxWidth: "300px", maxHeight: "300px" }}
+                    className="card-imgs"
+                  />
+                  <Card.Body>
+                    <Card.Title
+                      className="fredokaB"
+                      style={{ fontSize: "1.7vw" }}
+                    >
+                      {item.name}
+                    </Card.Title>
+                    <Card.Text className="fredokaB">
+                      {item.background}
+                    </Card.Text>
+                    <Card.Text className="fredokaL">{item.desk}</Card.Text>
+                    <Button
+                      variant="none"
+                      style={{ width: "30px", height: "30px", padding: "0px" }}
+                      href={item.ig}
+                      target="blank"
+                    >
+                      <i
+                        className="bi bi-instagram"
+                        style={{
+                          display: "flex",
+                          width: "30px",
+                          fontSize: "30px",
+                        }}
+                      ></i>
+                    </Button>
+                  </Card.Body>
+                </Card>
+              </Carousel.Item>
+            );
           })}
-          
         </Carousel>
       ) : (
         <></>

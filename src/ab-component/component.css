@@ -11,16 +11,8 @@
 .before-animation {
   opacity: 0 !important;
 }
-.animation-fade-left {
-  animation: text-animation 3s ease 0s 1 normal forwards;
-  opacity: 1;
-}
 .card-style {
   background-color: #fff;
-}
-.animation-bounce-down {
-  animation: bounce-animation 3s ease 0s 1 normal forwards;
-  opacity: 1;
 }
 .matpel-cover {
   max-width: 700px;

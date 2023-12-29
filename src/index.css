@@ -21,11 +21,11 @@ code {
   font-weight: 400 !important;
 }
 .bimbel-blue{
-  color: #2a5b82 !important;
+  color:  #2a5d82 !important;
 }
 
 .back-darkblue{
-  background-color: #2a5b82 !important;
+  background-color: #2a5d82!important;
 }
 .back-lightblue{
   background-color: #61c4b0 !important;
@@ -35,6 +35,17 @@ code {
 	0% {
 		opacity: 0;
 		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	}
+}
+@keyframes text-animation-2 {
+	0% {
+		opacity: 0;
+		transform: translateX(-50px);
 	}
 
 	100% {
