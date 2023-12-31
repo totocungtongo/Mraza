@@ -14,14 +14,15 @@
 .card-style {
   background-color: #fff;
 }
-.matpel-cover {
-  max-width: 700px;
+.fasilitas-cover {
+  position: relative;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  gap: 10px;
+  align-items: center;
+  padding: 0px !important;
+  bottom: 100px;
 }
-.matpel-card {
+.fasilitas-card {
   background: none;
   border: none;
 }
@@ -33,12 +34,12 @@
   padding: 60px;
 }
 @media (max-width: 1204px) {
-  .matpel-card {
+  .fasilitas-card {
     max-width: 13rem;
   }
 }
 @media (max-width: 1024px) {
-  .matpel-card-p {
+  .fasilitas-card-p {
     font-size: 13px;
   }
 }
@@ -48,11 +49,11 @@
   .reviewsec-wrapper {
     max-width: 250px !important;
   }
-  .matpel-card {
+  .fasilitas-card {
     max-width: 9rem;
     padding: 0px !important;
   }
-  .matpel-card-p {
+  .fasilitas-card-p {
     font-size: 13px !important;
   }
   .icon-style {

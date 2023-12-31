@@ -1,10 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
 import Card from "react-bootstrap/Card";
 import AnimationMasuk from "../ab-component/AnimationTrigger";
-import { Row } from "react-bootstrap";
-const Materi = () => {
+import { Row ,Button} from "react-bootstrap";
+const Fasilitas = () => {
   const rowRef = useRef(null);
-  const isVisible = AnimationMasuk(rowRef, 30);
+  const isVisible = AnimationMasuk(rowRef);
   const [all_mat, setMatpel] = useState([]);
   useEffect(() => {
     const matpel = [
@@ -45,43 +45,53 @@ const Materi = () => {
     <Row
       ref={rowRef}
       className={
-        isVisible ? "matpel-cover animation-bounce-down" : "before-animation"
+        isVisible ? "fasilitas-cover animation-bounce-down" : "before-animation"
       }
     >
-      {all_mat.map((item, index) => {
-        return (
-          <Card style={{ width: "18rem" }} key={index} className="matpel-card">
-            <Card.Body>
-              <Card.Title className="fredokaB matpel-card-t">
-                <i
-                  className={item.icon + " icon-style"}
-                  style={{
-                    padding: "0",
-                    fontSize: "40px",
-                    marginRight: "10px",
-                    color: "#2a5d82",
-                  }}
-                ></i>
-                {item.matname}
-              </Card.Title>
-              <Card.Text className="fredokaL matpel-card-p">
-                {item.desk}
-              </Card.Text>
-            </Card.Body>
-          </Card>
-        );
-      })}
-      <p
-        style={{
-          color: "#ff9090",
-          webkitUserSelect: "none",
-          userSelect: "none",
-        }}
+      <h3
+        className="fredokaB "
+        style={{ fontSize: "50px", textAlign: "center" }}
       >
-        im hidden
-      </p>
+        Fasilitas kami
+      </h3>
+      <Row style={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:"20px"}}>
+        {all_mat.map((item, index) => {
+          return (
+            <Card
+              style={{ maxWidth: "300px" }}
+              key={index}
+              className="fasilitas-card"
+            >
+              <Card.Body>
+                <Card.Title className="fredokaB matpel-card-t">
+                  <i
+                    className={item.icon + " icon-style"}
+                    style={{
+                      padding: "0",
+                      fontSize: "40px",
+                      marginRight: "10px",
+                      color: "#2a5d82",
+                    }}
+                  ></i>
+                  {item.matname}
+                </Card.Title>
+                <Card.Text className="fredokaL matpel-card-p">
+                  {item.desk}
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          );
+        })}
+      </Row>
+      <Button
+        variant="none"
+        className="button-sam"
+        style={{ maxWidth: "200px" }}
+      >
+        Hubungi kami!
+      </Button>
     </Row>
   );
 };
 
-export default Materi;
+export default Fasilitas;

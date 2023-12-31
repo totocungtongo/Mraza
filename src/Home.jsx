@@ -5,6 +5,7 @@ import Navs from "./ab-component/Navbar";
 import { Row, Col, Button } from "react-bootstrap";
 import TeacherSec from "./Home/Teachersec";
 import ProgramStudi from "./Home/ProgramStudi";
+import Fasilitas from "./Home/Fasilitas";
 import Footer from "./ab-component/Footer";
 import AnimationMasuk from "./ab-component/AnimationTrigger";
 
@@ -29,13 +30,6 @@ function Home() {
               possimus explicabo perspiciatis? Excepturi rem tenetur cupiditate
               deserunt adipisci, eius explicabo.-Ms mina
             </h2>
-            <Button
-              variant="none"
-              style={{ marginRight: "20px " }}
-              className="button-sam"
-            >
-              Ketahui lebih lanjut!
-            </Button>
           </Col>
           <Col className="sambutan-col-2 back-lightblue">
             <img
@@ -75,16 +69,6 @@ function Home() {
           </h3>
           <Col className="whois-col">
             <ProgramStudi />
-            {/* <img
-              src="https://img.freepik.com/free-photo/little-bookworm-wrapped-up-reading_1098-17283.jpg?w=360&t=st=1701845838~exp=1701846438~hmac=993f490a98b1ac10230ae34aa3b1a24a5d3ff1af2b35f31cc71bc525329c3234"
-              alt="kidsplaying"
-              className="whois-img"
-              style={{
-                maxWidth: "100%",
-                height: "auto",
-                borderRadius: "200px",
-              }}
-            /> */}
           </Col>
         </Row>
         <Row className="Teacher">
@@ -149,10 +133,10 @@ function Home() {
               corporis iusto, magnam saepe ab quaerat dolor provident odio quod
               quo quas est laborum adipisci consequuntur. Quas.
             </p>
-            <Button variant="none" className="button-sam">
-              Hubungi kami!
-            </Button>
           </Col>
+        </Row>
+        <Row className="fasilitas">
+          <Fasilitas/>
         </Row>
         <Footer />
     </div>
@@ -162,11 +146,11 @@ function Home() {
 export default Home;
 
 // Apa yang home butuhkan
-// 1. Welcome section. ✅ + hubungi
+// 1. Welcome section. ✅ 
 // 2. Fasilitas.
 // 3. Teacher section.✅
 // 4. why us section. ✅
-// 5. Program studi ---> materi
+// 5. Program studi ---> materi 
 // 6. Review sec
 // 6. Footer.
 
