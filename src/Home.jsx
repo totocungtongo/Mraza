@@ -2,7 +2,7 @@ import "./Home.css";
 import React, { useRef } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Navs from "./ab-component/Navbar";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Row, Col, Button } from "react-bootstrap";
 import TeacherSec from "./Home/Teachersec";
 import ProgramStudi from "./Home/ProgramStudi";
 import Footer from "./ab-component/Footer";
