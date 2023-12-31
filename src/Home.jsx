@@ -10,9 +10,9 @@ import AnimationMasuk from "./ab-component/AnimationTrigger";
 
 function Home() {
   const whyusRef = useRef(null);
-  const programRef = useRef(null)
+  // const programRef = useRef(null)
   const isVisible = AnimationMasuk(whyusRef);
-  const isVisible2 = AnimationMasuk(programRef);
+  // const isVisible2 = AnimationMasuk(programRef);
 
   return (
     <div className="home-wrapper">
