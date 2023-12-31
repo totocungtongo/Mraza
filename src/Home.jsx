@@ -4,16 +4,20 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Navs from "./ab-component/Navbar";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import TeacherSec from "./Home/Teachersec";
-import Materi from "./Home/Matpel";
+import ProgramStudi from "./Home/ProgramStudi";
+import Footer from "./ab-component/Footer";
 import AnimationMasuk from "./ab-component/AnimationTrigger";
 
 function Home() {
   const whyusRef = useRef(null);
+  const programRef = useRef(null)
   const isVisible = AnimationMasuk(whyusRef);
+  const isVisible2 = AnimationMasuk(programRef);
+
   return (
     <div className="home-wrapper">
       <Navs />
-      <Container className="welcome-section">
+      <Container className="home-section">
         <Row className="sambutan-wraper">
           <Col className="sambutan-col-1 back-lightblue">
             <h1 className="fredokaB h1-bimbel">
@@ -26,7 +30,11 @@ function Home() {
               possimus explicabo perspiciatis? Excepturi rem tenetur cupiditate
               deserunt adipisci, eius explicabo.-Ms mina
             </h2>
-            <Button variant="none" className="button-sam">
+            <Button
+              variant="none"
+              style={{ marginRight: "20px " }}
+              className="button-sam"
+            >
               Ketahui lebih lanjut!
             </Button>
           </Col>
@@ -64,11 +72,11 @@ function Home() {
         </Row>
         <Row className="whois">
           <h3 className="fredokaB judul-whois">
-            Materi-Materi Bimbel <span style={{ color: "#eb1d23" }}>M</span>raza
+           Program Bimbel <span style={{ color: "#eb1d23" }}>M</span>raza
           </h3>
-          <div className="whois-wraper">
-            <Materi />
-            <img
+          <Col className="whois-col">
+            <ProgramStudi />
+            {/* <img
               src="https://img.freepik.com/free-photo/little-bookworm-wrapped-up-reading_1098-17283.jpg?w=360&t=st=1701845838~exp=1701846438~hmac=993f490a98b1ac10230ae34aa3b1a24a5d3ff1af2b35f31cc71bc525329c3234"
               alt="kidsplaying"
               className="whois-img"
@@ -77,8 +85,8 @@ function Home() {
                 height: "auto",
                 borderRadius: "200px",
               }}
-            />
-          </div>
+            /> */}
+          </Col>
         </Row>
         <Row className="Teacher">
           <div className="wave3">
@@ -143,10 +151,11 @@ function Home() {
               quo quas est laborum adipisci consequuntur. Quas.
             </p>
             <Button variant="none" className="button-sam">
-              Program Pembelajaran
+              Hubungi kami!
             </Button>
           </Col>
         </Row>
+        <Footer />
       </Container>
     </div>
   );
@@ -155,8 +164,17 @@ function Home() {
 export default Home;
 
 // Apa yang home butuhkan
-// 1. Welcome section. ✅
-// 2. Teacher section.✅
-// 3. Materi yang di pelajari.✅
+// 1. Welcome section. ✅ + hubungi
+// 2. Fasilitas.
+// 3. Teacher section.✅
 // 4. why us section. ✅
-// 4. Footer.
+// 5. Program studi ---> materi
+// 6. Review sec
+// 6. Footer.
+
+// Noted  :
+// slide 2 title slide 2 harus ada kenapa kaminya.
+// contact person di footer.
+// Fasilitas.
+// seksi program pembelajaran ---> materi2.
+// review section.

@@ -8,11 +8,11 @@
   margin: 0 !important;
 }
 
-.welcome-section {
+.home-section {
   background-color: #2a5d82;
   max-width: 100vw !important;
-  height: 100vh;
-  padding: 0px;
+  height: auto;
+  padding: 0px !important;
   margin: 0px !important;
 }
 .sambutan-wraper {
@@ -26,6 +26,7 @@
   flex-direction: row;
   gap: 50px;
   padding: 60px;
+  margin: 0px !important;
 }
 .sambutan-col-1 {
   animation: text-animation 3s ease 0s 1 normal forwards;
@@ -46,7 +47,7 @@
 .button-sam {
   color: white !important;
   background-color: #bb5fcb !important;
-  box-shadow:  5px 6px rgba(0, 0, 0, 0.3);
+  box-shadow: 5px 6px rgba(0, 0, 0, 0.3);
   transition: ease 1s;
 }
 .button-sam:hover {
@@ -54,10 +55,10 @@
   background-color: #850e9a !important;
   transition: ease 1s;
 }
-.button-sam:focus{
+.button-sam:focus {
   color: white !important;
   background-color: #6f0b81 !important;
-  box-shadow:  5px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 5px 4px rgba(0, 0, 0, 0.2);
   transition: ease 0.5s;
 }
 .sambutan-col-2 {
@@ -94,8 +95,13 @@
   padding: 60px;
   border-width: 0px !important;
 }
-.whois-col-1 {
+.judul-whois {
+  text-align: center;
+  font-size: 40px;
+}
+.whois-col{
   background-color: #ff9090;
+  max-width: 100% !important;
 }
 .card-style {
   flex-direction: row !important;
@@ -193,7 +199,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;  
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
@@ -210,17 +216,8 @@
 .wave4 .shape-fill {
   fill: #2a5d82;
 }
-.judul-whois {
-  text-align: center;
-  font-size: 40px;
-}
-.whois-wraper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
+
+
 @media (max-width: 1204px) {
   .whois {
     height: auto;
@@ -310,8 +307,8 @@
   }
 }
 @media (max-width: 576px) {
-  .caraousel-rev{
-    padding: 0px  0px !important;
+  .caraousel-rev {
+    padding: 0px 0px !important;
   }
   .h1-bimbel {
     font-size: 33px !important;
@@ -322,10 +319,10 @@
   .h3-bimbel {
     font-size: 13px;
   }
-  .h3-whyus{
+  .h3-whyus {
     font-size: 35px !important;
   }
-  .p-whyus{
+  .p-whyus {
     font-size: 12px !important;
   }
   .whois {
@@ -350,6 +347,9 @@
   .card-title {
     font-size: medium !important;
   }
+  /* .card-program{
+    max-width: 300px !important;
+  } */
   .card-text {
     font-size: small !important;
   }

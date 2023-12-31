@@ -25,32 +25,37 @@
   background: none;
   border: none;
 }
-
+.footer-container {
+  width: 100%;
+  min-height: 600px;
+  background-color: #1f5073;
+  margin: 0px;
+  padding: 60px;
+}
 @media (max-width: 1204px) {
- .matpel-card{
+  .matpel-card {
     max-width: 13rem;
- }
+  }
 }
 @media (max-width: 1024px) {
- .matpel-card-p{
+  .matpel-card-p {
     font-size: 13px;
- }
+  }
 }
 @media (max-width: 768px) {
- 
 }
 @media (max-width: 576px) {
   .reviewsec-wrapper {
     max-width: 250px !important;
   }
-   .matpel-card{
+  .matpel-card {
     max-width: 9rem;
     padding: 0px !important;
- }
-  .matpel-card-p{
+  }
+  .matpel-card-p {
     font-size: 13px !important;
- }
- .icon-style{
+  }
+  .icon-style {
     font-size: 15px !important;
- }
+  }
 }

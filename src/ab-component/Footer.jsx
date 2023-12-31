@@ -1,13 +1,12 @@
-import React from 'react';
-import { Container,Row,Col } from 'react-bootstrap';
+import React from "react";
+import { Container, Row, Col } from "react-bootstrap";
 
 const Footer = () => {
   return (
-    <div>
-      <Container>
-        R
-      </Container>
-    </div>
+      <Row className="footer-container">
+        <Col></Col>
+        <Col></Col>
+      </Row>
   );
 };
 
