@@ -17,7 +17,6 @@ function Home() {
   return (
     <div className="home-wrapper">
       <Navs />
-      <Container className="home-section">
         <Row className="sambutan-wraper">
           <Col className="sambutan-col-1 back-lightblue">
             <h1 className="fredokaB h1-bimbel">
@@ -156,7 +155,6 @@ function Home() {
           </Col>
         </Row>
         <Footer />
-      </Container>
     </div>
   );
 }
