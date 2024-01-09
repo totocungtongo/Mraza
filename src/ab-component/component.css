@@ -33,6 +33,13 @@
   margin: 0px;
   padding: 60px;
 }
+.footer-container a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: 1px 1px black;
+    font-family: 'Fredoka', sans-serif !important;
+  font-weight: 400 !important;
+}
 @media (max-width: 1204px) {
   .fasilitas-card {
     max-width: 13rem;

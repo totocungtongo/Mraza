@@ -103,21 +103,43 @@ const TeacherSec = () => {
                       {item.background}
                     </Card.Text>
                     <Card.Text className="fredokaL">{item.desk}</Card.Text>
-                    <Button
-                      variant="none"
-                      style={{ width: "30px", height: "30px", padding: "0px" }}
-                      href={item.ig}
-                      target="blank"
+                    <div
+                      style={{
+                        display: "flex",
+                        flexDirection: "row",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                        color: " black",
+                      }}
                     >
+                      <Button
+                        variant="none"
+                        style={{
+                          width: "30px",
+                          height: "30px",
+                          padding: "0px",
+                        }}
+                        href={item.ig}
+                        target="blank"
+                      >
+                        <i
+                          className="bi bi-instagram"
+                          style={{
+                            display: "flex",
+                            width: "30px",
+                            fontSize: "30px",
+                          }}
+                        ></i>
+                      </Button>
                       <i
-                        className="bi bi-instagram"
+                        className="bi bi-arrow-right"
                         style={{
                           display: "flex",
                           width: "30px",
                           fontSize: "30px",
                         }}
                       ></i>
-                    </Button>
+                    </div>
                   </Card.Body>
                 </Card>
               </Carousel.Item>
