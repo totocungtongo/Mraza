@@ -225,17 +225,20 @@
   fill: #2a5d82;
 }
 .card-review {
-  max-width: 350px !important;
+  max-width: 375px !important;
   display: flex;
   flex-direction: row !important;
   padding: 10px 10px;
 }
-/* .card-review .card-body{
-  padding: 20px 20px;
-} */
-.card-review .card-img{
+.card-review .card-body {
+  padding: 5px 5px;
+}
+.card-review .card-img {
   max-width: 70px;
   border-radius: 50%;
+}
+.card-review .card-text {
+  font-size: 13px;
 }
 
 @media (max-width: 1204px) {
@@ -423,3 +426,7 @@
 .card-animation2 {
   animation: billboardAnimation2 10s linear infinite; /* Adjust the animation duration and timing function as needed */
 }
+.card-animation3 {
+  animation: billboardAnimation 9s linear infinite; /* Adjust the animation duration and timing function as needed */
+}
+

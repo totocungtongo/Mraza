@@ -49,12 +49,19 @@ const Fasilitas = () => {
       }
     >
       <h3
-        className="fredokaB "
-        style={{ fontSize: "50px", textAlign: "center" }}
+        className="fredokaB h3-whyus"
+        style={{  textAlign: "center" }}
       >
         Fasilitas kami
       </h3>
-      <Row style={{display:"flex",justifyContent:"center",alignItems:"center",marginBottom:"20px"}}>
+      <Row
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          marginBottom: "20px",
+        }}
+      >
         {all_mat.map((item, index) => {
           return (
             <Card
@@ -63,7 +70,7 @@ const Fasilitas = () => {
               className="fasilitas-card"
             >
               <Card.Body>
-                <Card.Title className="fredokaB matpel-card-t">
+                <Card.Title className="fredokaB matpel-card-t ">
                   <i
                     className={item.icon + " icon-style"}
                     style={{
