@@ -63,17 +63,41 @@ const PTK = () => {
             ></path>
           </svg>
         </div>
-        <Col className="sambutan-col-2 back-lightblue"></Col>
-        <Col className="sambutan-col-1">
-          <h1 className="fredokaB h1-bimbel">
-            Bimbel <span style={{ color: "#eb1d23" }}>M</span>raza
-          </h1>
-          <h2 className="fredokaL h3-bimbel">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos libero
-            unde hic quos, vitae adipisci cumque ducimus odio alias, possimus
-            explicabo perspiciatis? Excepturi rem tenetur cupiditate deserunt
-            adipisci, eius explicabo.-Ms mina
+        <Col
+          className="penjelasan-tk-col"
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <img
+            src="https://img.freepik.com/free-photo/medium-shot-girl-coloring-table_23-2149355178.jpg?w=360&t=st=1706091006~exp=1706091606~hmac=14310eb42a532ca9eb0b0eda655769cedf5443a45b406f5cb19ed3faa7faf642"
+            alt="kids learning"
+            style={{ maxWidth: "350px" ,borderRadius:"5px"}}
+          />
+        </Col>
+        <Col className="penjelasan-tk-col">
+          <h2 className="fredokaB h2-bimbel">
+            Yang kami tawarkan di <br /> program TK
           </h2>
+          <ul className="fredokaL h3-bimbel">
+            <li>
+              ADAPTO: Satu-satunya video belajar interaktif di Indonesia. Bisa
+              sesuaikan pemahaman siswa!
+            </li>
+            <li>
+              25 Koin Roboguru Plus untuk bertanya secara instan dengan Tutor
+              Roboguru (Roboguru Expert)
+            </li>
+            <li>
+              GARANSI! Jawaban terverifikasi oleh Tutor Roboguru (Roboguru
+              Expert) dalam 24 jam, hingga 20 pertanyaan (dengan 2,000 Golds
+              Ruangguru)
+            </li>
+            <li>65rb video belajar premium dengan ADAPTO</li>
+            <li>400rb latihan soal serta pembahasan</li>
+          </ul>
         </Col>
       </Row>
       <Footer />

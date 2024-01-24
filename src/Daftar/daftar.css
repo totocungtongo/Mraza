@@ -28,7 +28,7 @@
 .penjelasan-tk {
   background-color: #ff9090;
   position: relative;
-  height: 600px;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -36,6 +36,13 @@
   gap: 50px;
   padding: 60px;
   margin: 0px !important;
+}
+.penjelasan-tk-col{
+  animation: text-animation 3s ease 0s 1 normal forwards;
+  max-width: 600px !important;
+  height: auto;
+  padding: 0px 0px !important;
+  gap: 20px;
 }
 .wave5 {
   position: absolute;
@@ -52,7 +59,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 150px;
+  height: 100px;
 }
 
 .wave5 .shape-fill {
