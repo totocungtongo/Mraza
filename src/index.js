@@ -2,6 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import Home from "./Home";
+import DaftarPage from "./Daftar";
+import PTK from "./Daftar/ProgramTk";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -11,6 +13,8 @@ root.render(
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Daftar" element={<DaftarPage />}/>
+         <Route path="/Daftar/program-tk" element={<PTK />} />
       </Routes>
     </Router>
   </React.StrictMode>

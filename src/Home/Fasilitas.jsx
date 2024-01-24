@@ -50,7 +50,7 @@ const Fasilitas = () => {
     >
       <h3
         className="fredokaB h3-whyus"
-        style={{  textAlign: "center" }}
+        style={{ textAlign: "center", fontSize: "50px" }}
       >
         Fasilitas kami
       </h3>

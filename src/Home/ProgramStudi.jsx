@@ -17,7 +17,7 @@ const ProgramStudi = () => {
       ],
       kelebihan:
         "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis est temporibus accusantium quam quisquam iusto quas, fugiat fuga quod deserunt reprehenderit numquam, consequatur exercitationem ipsam. Perspiciatis repellendus numquam consequatur. Voluptatibus.",
-      redirect: "",
+      redirect: "/program-tk",
       icon: ["", "fa-solid fa-square-root-variable", "fa-solid fa-users"],
     },
     {
@@ -67,15 +67,16 @@ const ProgramStudi = () => {
         alignItems: "center",
         gap: "40px",
         height: "auto",
+        maxWidth: "1125px",
       }}
     >
       {card_program.map((item, index) => {
         return (
-          <div style={{ maxWidth: "500px" }} key={index}>
+          <div style={{ maxWidth: "400px" }} key={index}>
             <Card
               className="card-program"
               style={{
-                maxWidth: "500px",
+                maxWidth: "400px",
                 padding: "0px 0px",
                 border: "0px",
                 backgroundColor: "rgba(0,0,0,0)",
@@ -122,6 +123,7 @@ const ProgramStudi = () => {
                   variant="none"
                   style={{ marginRight: "20px " }}
                   className="button-sam"
+                  href={"/Daftar" + item.redirect}
                 >
                   Ketahui lebih lanjut!
                 </Button>

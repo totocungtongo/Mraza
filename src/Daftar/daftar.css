@@ -1,0 +1,97 @@
+.sambutan-tk {
+  padding: 0px;
+  border-radius: 0px;
+  max-height: 300px;
+  overflow: hidden;
+}
+.img-samb-tk {
+  border-radius: 0px;
+  object-fit: cover;
+  object-position: 70% 20%;
+  height: 300px;
+}
+.tk-h1 {
+  color: #fff;
+  font-size: 50px;
+  text-align: center;
+  background-color: rgba(42, 93, 130, 0.5);
+  max-width: 600px;
+  border-radius: 3px;
+}
+
+.tk-p {
+  color: rgb(42, 93, 130);
+  font-size: 25px;
+  text-align: center;
+  margin-top: 60px;
+}
+.penjelasan-tk {
+  background-color: #ff9090;
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  gap: 50px;
+  padding: 60px;
+  margin: 0px !important;
+}
+.wave5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+  padding: 0 !important;
+}
+
+.wave5 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 150px;
+}
+
+.wave5 .shape-fill {
+  fill: #61c4b0;
+}
+
+/* Styles for PC size and larger screens */
+@media only screen and (min-width: 1024px) {
+  /* Your PC-specific styles go here */
+}
+
+/* Styles for tablets and smaller screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  /* Your tablet-specific styles go here */
+  .tk-h1 {
+    font-size: 30px;
+    top: 25%;
+  }
+  .tk-p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 60px;
+  }
+  .img-samb-tk {
+    overflow: -moz-hidden-unscrollable;
+  }
+}
+
+/* Styles for phones and smaller screens */
+@media only screen and (max-width: 767px) {
+  /* Your phone-specific styles go here */
+  .tk-h1 {
+    font-size: 30px !important;
+    top: 25%;
+  }
+  .tk-p {
+    font-size: 15px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 60px;
+  }
+}

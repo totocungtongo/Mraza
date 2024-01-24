@@ -134,11 +134,11 @@ function Home() {
           </p>
         </Col>
       </Row>
-      <Row className="fasilitas">
-        <Fasilitas />
-      </Row>
       <Row>
         <ReviewSec />
+      </Row>
+      <Row className="fasilitas">
+        <Fasilitas />
       </Row>
       <Footer />
     </div>

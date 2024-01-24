@@ -15,7 +15,7 @@
 .sambutan-wraper {
   background-color: #61c4b0;
   position: relative;
-  height: 700px;
+  height: 600px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -98,6 +98,9 @@
 .whois-col {
   background-color: #ff9090;
   max-width: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .card-style {
   flex-direction: row !important;
@@ -105,13 +108,13 @@
 .whyus {
   background-color: #61c4b0;
   position: relative;
-  height: 600px;
+  height: 450px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   gap: 20px;
-  padding: 60px;
+  padding: 10px 60px;
   border-width: 0px !important;
 }
 .whyus-col-1 {
@@ -429,4 +432,3 @@
 .card-animation3 {
   animation: billboardAnimation 9s linear infinite; /* Adjust the animation duration and timing function as needed */
 }
-
