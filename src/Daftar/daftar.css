@@ -23,7 +23,7 @@
   color: rgb(42, 93, 130);
   font-size: 25px;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 .penjelasan-tk {
   background-color: #ff9090;
@@ -33,16 +33,39 @@
   justify-content: space-around;
   align-items: center;
   flex-direction: row;
-  gap: 50px;
   padding: 60px;
   margin: 0px !important;
 }
-.penjelasan-tk-col{
+.penjelasan-tk-col {
   animation: text-animation 3s ease 0s 1 normal forwards;
   max-width: 600px !important;
   height: auto;
   padding: 0px 0px !important;
   gap: 20px;
+  margin-top: 20px;
+}
+.penjelasan-tk-2 {
+  background-color: #ff9090;
+  position: relative;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  padding: 60px;
+  margin: 0px !important;
+}
+.penjelasan-tk-2-col {
+  animation: text-animation 3s ease 0s 1 normal forwards;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 600px !important;
+  height: auto;
+  padding: 0px 0px !important;
+  gap: 20px;
+  margin-top: 20px;
 }
 .wave5 {
   position: absolute;
@@ -65,7 +88,28 @@
 .wave5 .shape-fill {
   fill: #61c4b0;
 }
-
+.list-tawaran {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  font-size: 20px;
+  padding: 0px;
+  gap: 20px;
+}
+.list-tawaran li {
+  display: flex;
+  align-items: center;
+  padding-left: 35px;
+  background: url("../a-image/checklist.svg") no-repeat 0 0.5rem;
+}
+.tk-card-wraper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  margin-top: 40px;
+}
 /* Styles for PC size and larger screens */
 @media only screen and (min-width: 1024px) {
   /* Your PC-specific styles go here */
@@ -86,6 +130,12 @@
   .img-samb-tk {
     overflow: -moz-hidden-unscrollable;
   }
+  .penjelasan-tk {
+    gap: 20px;
+  }
+  .tk-card-wraper {
+    flex-direction: column;
+  }
 }
 
 /* Styles for phones and smaller screens */
@@ -100,5 +150,12 @@
     text-align: center;
     margin-top: 30px;
     margin-bottom: 60px;
+  }
+  .penjelasan-tk {
+    gap: 20px;
+    flex-direction: column;
+  }
+  .tk-card-wraper {
+    flex-direction: column;
   }
 }

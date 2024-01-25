@@ -1,6 +1,7 @@
 import React from "react";
 import Navs from "../ab-component/Navbar";
 import Footer from "../ab-component/Footer";
+import Tkcard from "./CardTk";
 import { Row, Col } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "./daftar.css";
@@ -41,13 +42,29 @@ const PTK = () => {
             </Card.Title>
           </Card.ImgOverlay>
         </Card>
-        <p className="fredokaL tk-p">
-          Bimbel Mraza memberikan bimbingan belajar intensif, penjelasan
-          mendalam, dan persiapan ujian untuk membantu siswa memaksimalkan
-          potensi mereka. Program bimbel ini bertujuan untuk meningkatkan
-          prestasi akademik siswa dan membangun kepercayaan diri dalam proses
-          pembelajaran.
-        </p>
+        <div
+          style={{
+            width: "100%",
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <p
+            className="fredokaB tk-p"
+            style={{
+              maxWidth: "1000px",
+              alignSelf: "center",
+              justifySelf: "center",
+            }}
+          >
+            Bimbel Mraza memberikan bimbingan belajar intensif, penjelasan
+            mendalam, dan persiapan ujian untuk membantu siswa memaksimalkan
+            potensi mereka. Program bimbel ini bertujuan untuk meningkatkan
+            prestasi akademik siswa dan membangun kepercayaan diri dalam proses
+            pembelajaran.
+          </p>
+        </div>
       </Row>
       <Row className="penjelasan-tk">
         <div className="wave5">
@@ -74,21 +91,21 @@ const PTK = () => {
           <img
             src="https://img.freepik.com/free-photo/medium-shot-girl-coloring-table_23-2149355178.jpg?w=360&t=st=1706091006~exp=1706091606~hmac=14310eb42a532ca9eb0b0eda655769cedf5443a45b406f5cb19ed3faa7faf642"
             alt="kids learning"
-            style={{ maxWidth: "350px" ,borderRadius:"5px"}}
+            style={{ maxWidth: "600px", borderRadius: "5px" }}
           />
         </Col>
         <Col className="penjelasan-tk-col">
           <h2 className="fredokaB h2-bimbel">
             Yang kami tawarkan di <br /> program TK
           </h2>
-          <ul className="fredokaL h3-bimbel">
+          <ul className="fredokaL list-tawaran">
             <li>
               ADAPTO: Satu-satunya video belajar interaktif di Indonesia. Bisa
               sesuaikan pemahaman siswa!
             </li>
             <li>
-              25 Koin Roboguru Plus untuk bertanya secara instan dengan Tutor
-              Roboguru (Roboguru Expert)
+              ADAPTO: Satu-satunya video belajar interaktif di Indonesia. Bisa
+              sesuaikan pemahaman siswa!
             </li>
             <li>
               GARANSI! Jawaban terverifikasi oleh Tutor Roboguru (Roboguru
@@ -97,7 +114,32 @@ const PTK = () => {
             </li>
             <li>65rb video belajar premium dengan ADAPTO</li>
             <li>400rb latihan soal serta pembahasan</li>
+            <li>
+              ADAPTO: Satu-satunya video belajar interaktif di Indonesia. Bisa
+              sesuaikan pemahaman siswa!
+            </li>
+            <li>
+              ADAPTO: Satu-satunya video belajar interaktif di Indonesia. Bisa
+              sesuaikan pemahaman siswa!
+            </li>
+            <li>
+              GARANSI! Jawaban terverifikasi oleh Tutor Roboguru (Roboguru
+              Expert) dalam 24 jam, hingga 20 pertanyaan (dengan 2,000 Golds
+              Ruangguru)
+            </li>
           </ul>
+        </Col>
+      </Row>
+      <Row className="penjelasan-tk-2">
+        <h2
+          className="fredokaB h2-bimbel"
+          style={{ maxWidth: "900px", textAlign: "center" }}
+        >
+          Dapatkan penawaran menarik dengan klik paket terjangkau sesuai
+          kebutuhan Anda.
+        </h2>
+        <Col className="penjelasan-tk-col-2" >
+          <Tkcard />
         </Col>
       </Row>
       <Footer />
