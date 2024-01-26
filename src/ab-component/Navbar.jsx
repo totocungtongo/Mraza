@@ -71,16 +71,10 @@ function Navs() {
         </Container>
       </Navbar>
       <Modal show={show} onHide={handleClose} className="navbar-modal">
-        <Modal.Header
-          style={{
-            backgroundColor: "#cceadd",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            paddingBottom: "0px",
-          }}
-        >
-          <Modal.Title className="fredokaB">Menu</Modal.Title>
+        <Modal.Header>
+          <Modal.Title className="fredokaB" style={{ textAlign: "center" }}>
+            Menu
+          </Modal.Title>
         </Modal.Header>
         <Modal.Body
           style={{
@@ -102,7 +96,7 @@ function Navs() {
           >
             <Nav.Link href="#home">Home</Nav.Link>
             <Nav.Link href="#features">Kumpulan soal</Nav.Link>
-            <Nav.Link href="#pricing">Daftar sekarang!</Nav.Link>
+            <Nav.Link href="/Daftar">Daftar sekarang!</Nav.Link>
             <Nav.Link href="#pricing">Parenting konsul</Nav.Link>
             <Nav.Link href="#pricing">Blog</Nav.Link>
           </Nav>

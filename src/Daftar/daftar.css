@@ -18,6 +18,11 @@
   max-width: 600px;
   border-radius: 3px;
 }
+.tk-h2 {
+  font-size: 35px;
+  text-align: center;
+  max-width: 600px;
+}
 
 .tk-p {
   color: rgb(42, 93, 130);
@@ -110,6 +115,21 @@
   gap: 40px;
   margin-top: 40px;
 }
+.card-paket-design {
+  max-width: 20rem;
+  border-radius: 40px;
+  border: 0px;
+  box-shadow: 15px 10px 3px rgba(0, 0, 0, 0.3);
+  background-color: #61c4b0;
+}
+.card-paket-design:hover {
+  cursor: pointer;
+}
+.modal-paket{
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
 /* Styles for PC size and larger screens */
 @media only screen and (min-width: 1024px) {
   /* Your PC-specific styles go here */
@@ -119,8 +139,11 @@
 @media only screen and (max-width: 1023px) and (min-width: 768px) {
   /* Your tablet-specific styles go here */
   .tk-h1 {
-    font-size: 30px;
+    font-size: 35px;
     top: 25%;
+  }
+  .tk-h2 {
+    font-size: 30px;
   }
   .tk-p {
     font-size: 20px;
@@ -142,8 +165,11 @@
 @media only screen and (max-width: 767px) {
   /* Your phone-specific styles go here */
   .tk-h1 {
-    font-size: 30px !important;
+    font-size: 35px !important;
     top: 25%;
+  }
+  .tk-h2 {
+    font-size: 30px !important;
   }
   .tk-p {
     font-size: 15px;

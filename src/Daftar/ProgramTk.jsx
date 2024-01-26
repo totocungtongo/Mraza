@@ -1,4 +1,4 @@
-import React from "react";
+import { React, useState, useEffect } from "react";
 import Navs from "../ab-component/Navbar";
 import Footer from "../ab-component/Footer";
 import Tkcard from "./CardTk";
@@ -7,6 +7,21 @@ import Card from "react-bootstrap/Card";
 import "./daftar.css";
 
 const PTK = () => {
+  const [isMobile, setIsMobile] = useState(window.innerWidth < 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+
+    // Attach the event listener for window resize
+    window.addEventListener("resize", handleResize);
+
+    // Cleanup the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
   return (
     <div className="ptk-wrapper">
       <Navs />
@@ -91,11 +106,15 @@ const PTK = () => {
           <img
             src="https://img.freepik.com/free-photo/medium-shot-girl-coloring-table_23-2149355178.jpg?w=360&t=st=1706091006~exp=1706091606~hmac=14310eb42a532ca9eb0b0eda655769cedf5443a45b406f5cb19ed3faa7faf642"
             alt="kids learning"
-            style={{ maxWidth: "600px", borderRadius: "5px" }}
+            style={
+              isMobile
+                ? { maxWidth: "250px", borderRadius: "5px" }
+                : { maxWidth: "600px", borderRadius: "5px" }
+            }
           />
         </Col>
         <Col className="penjelasan-tk-col">
-          <h2 className="fredokaB h2-bimbel">
+          <h2 className="fredokaB h2-bimbel" style={{textAlign: isMobile ? "center" :"start"}}>
             Yang kami tawarkan di <br /> program TK
           </h2>
           <ul className="fredokaL list-tawaran">
@@ -138,7 +157,7 @@ const PTK = () => {
           Dapatkan penawaran menarik dengan klik paket terjangkau sesuai
           kebutuhan Anda.
         </h2>
-        <Col className="penjelasan-tk-col-2" >
+        <Col className="penjelasan-tk-col-2">
           <Tkcard />
         </Col>
       </Row>

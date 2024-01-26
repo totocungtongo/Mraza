@@ -1,7 +1,22 @@
-import React from "react";
+import { React, useState } from "react";
 import Card from "react-bootstrap/Card";
+import Modal from "react-bootstrap/Modal";
+import { Button } from "react-bootstrap";
 
 const Tkcard = () => {
+  const [showModal, setShowModal] = useState({
+    eksklusif: false,
+    reguler: false,
+    holiday: false,
+  });
+
+  const handleClose = (modalName) => {
+    setShowModal({ ...showModal, [modalName]: false });
+  };
+
+  const handleShow = (modalName) => {
+    setShowModal({ ...showModal, [modalName]: true });
+  };
   const all_card_tk = [
     {
       judul: "Eksklusif",
@@ -10,6 +25,14 @@ const Tkcard = () => {
         "Maksimum Murid per kelas 6 orang",
         "Biaya Per Kedatangan  Rp.50.000 Rupiah",
       ],
+      ulh: [
+        "Maksimum Murid per kelas 6 orang",
+        "Biaya Per Kedatangan  Rp.50.000 Rupiah",
+        "mendapatkan fasilitas konsultasi",
+        "Kelas nyaman full AC",
+        "Gratis wifi untuk proses pembelajaran",
+      ],
+      wa: "",
     },
     {
       judul: "Reguler",
@@ -18,6 +41,14 @@ const Tkcard = () => {
         "Maksimum Murid per kelas 12 orang",
         "Biaya Per kedatangan Rp.25.000 Rupiah",
       ],
+      ulh: [
+        "Maksimum Murid per kelas 12 orang",
+        "Biaya Per Kedatangan  Rp.25.000 Rupiah",
+        "mendapatkan fasilitas konsultasi",
+        "Kelas nyaman full AC",
+        "Gratis wifi untuk proses pembelajaran",
+      ],
+      wa: "",
     },
     {
       judul: "Holiday",
@@ -25,51 +56,99 @@ const Tkcard = () => {
       ul: [
         "Maksimum Murid per kelas 12 orang",
         " Biaya Per kedatangan Rp.35.000 Rupiah",
+        "Pendaftaran di buka Hanya di liburan semester ",
       ],
+      ulh: [
+        "Maksimum Murid per kelas 12 orang",
+        "Biaya Per Kedatangan  Rp.35.000 Rupiah",
+        "Pendaftaran di buka Hanya di liburan semester ",
+        "Tidak mendapatkan fasilitas konsultasi",
+        "Kelas nyaman full AC",
+        "Gratis wifi untuk proses pembelajaran",
+      ],
+      wa: "",
     },
   ];
   return (
     <div className="tk-card-wraper">
       {all_card_tk.map((item, index) => {
+        const modalName = item.judul.toLowerCase();
         return (
-          <Card
-            style={{
-              maxWidth: "20rem",
-              borderRadius: "40px",
-              border: "0px",
-              boxShadow: "15px 10px 3px rgba(0,0,0,0.3)",
-              backgroundColor: "#61c4B0",
-            }}
-            key={index}
-            className="animation-attention-pulse"
-          >
-            <Card.Img
-              variant="top"
-              src={item.img}
-              style={{ borderRadius: "40px" }}
-            />
-            <Card.Body>
-              <Card.Title
-                className="fredokaB"
-                style={
-                  item.judul === "Eksklusif"
-                    ? { color: "#EB1D23" }
-                    : item.judul === "Reguler"
-                    ? { color: "#2A5D82" }
-                    : { color: "#BB5FCB" }
-                }
-              >
-                {item.judul}
-              </Card.Title>
-              <Card.Text>
+          <div>
+            <Card
+              className="card-paket-design animation-attention-pulse"
+              onClick={() => handleShow(modalName)}
+              key={index}
+            >
+              <Card.Img
+                variant="top"
+                src={item.img}
+                style={{ borderRadius: "40px" }}
+              />
+              <Card.Body>
+                <Card.Title
+                  className="fredokaB tk-h2"
+                  style={
+                    item.judul === "Eksklusif"
+                      ? { color: "#EB1D23" }
+                      : item.judul === "Reguler"
+                      ? { color: "#2A5D82" }
+                      : { color: "#BB5FCB" }
+                  }
+                >
+                  {item.judul}
+                </Card.Title>
                 <ul>
-                  {item.ul.map((materi,i) => {
-                    return <li key={i}>{materi}</li>;
+                  {item.ul.map((materi, i) => {
+                    return (
+                      <li key={i} className="fredokaB">
+                        {materi}
+                      </li>
+                    );
                   })}
                 </ul>
-              </Card.Text>
-            </Card.Body>
-          </Card>
+              </Card.Body>
+            </Card>
+            <Modal
+              show={showModal[modalName]}
+              onHide={() => handleClose(modalName)}
+              className="modal-paket"
+            >
+              <Modal.Header closeButton style={{ backgroundColor: "" }}>
+                <Modal.Title
+                  className="fredokaB tk-h2"
+                  style={
+                    item.judul === "Eksklusif"
+                      ? { color: "#EB1D23" }
+                      : item.judul === "Reguler"
+                      ? { color: "#2A5D82" }
+                      : { color: "#BB5FCB" }
+                  }
+                >
+                  {" "}
+                  {item.judul}
+                </Modal.Title>
+              </Modal.Header>
+              <Modal.Body style={{ backgroundColor: "" }}>
+                <ul>
+                  {item.ulh.map((materi, i) => {
+                    return (
+                      <li key={i} className="fredokaB">
+                        {materi}
+                      </li>
+                    );
+                  })}
+                </ul>
+                <Button
+                  variant="none"
+                  className="button-sam"
+                  style={{ maxWidth: "200px" }}
+                >
+                  daftar sekarang!
+                </Button>
+              </Modal.Body>
+            </Modal>
+          </div>
         );
       })}
     </div>
